@@ -11,22 +11,34 @@ const header = props => {
 	return (
 		<header className="header">
 			<img src={Logo} alt="jaku logo" className="logo"/>
-				<nav className="user-nav">
-					<div className="user-nav__icon-box">
+			<form action="#" className="search">
+				<input type="text" className="search__input" placeholder="# Pedido"/>
+				<button className="search__button">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							xmlnsXlink="http://www.w3.org/1999/xlink"
-							className="user-nav__icon"
+							className="search__icon"
 						>
-							<use xlinkHref={`${Symbols}#icon-bell`} />	
+							<use xlinkHref={`${Symbols}#icon-search`} />	
 						</svg>
-						<span className="user-nav__notification">7</span> 
-					</div>
-					<div className="user-nav__user">
-						<img src={user} alt="user" className="user-nav__user-photo"/>
-						{/* <span className="user-nav__user-name">user1</span> */}
-					</div>
-				</nav>
+				</button>
+			</form>
+			<nav className="user-nav">
+				<div className="user-nav__icon-box">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						xmlnsXlink="http://www.w3.org/1999/xlink"
+						className="user-nav__icon"
+					>
+						<use xlinkHref={`${Symbols}#icon-bell`} />	
+					</svg>
+					<span className="user-nav__notification">7</span> 
+				</div>
+				<div className="user-nav__user">
+					<img src={user} alt="user" className="user-nav__user-photo"/>
+					<span className="user-nav__user-name">Sasha</span>
+				</div>
+			</nav>
 		</header>
 	);
 };
