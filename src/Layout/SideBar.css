@@ -21,6 +21,13 @@
 	} 
 }
 
+@media only screen and (max-width: 31.25em) {
+	.side-nav__linktext {
+		text-align: center;
+		font-size: 1.1rem;
+	}
+}
+
 .side-nav__item {
 	position: relative; 
 }

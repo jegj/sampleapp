@@ -18,7 +18,7 @@ const sidebar = props => {
 						>
 							<use xlinkHref={`${Symbols}#icon-truck`} />	
 						</svg>
-						<span>Pedido</span>
+						<span className="side-nav__linktext">Pedido</span>
 					</a>
 				</li>	
 				<li className="side-nav__item">
@@ -30,7 +30,7 @@ const sidebar = props => {
 						>
 							<use xlinkHref={`${Symbols}#icon-balance-scale`} />	
 						</svg>
-						<span>Propuestas</span>
+						<span className="side-nav__linktext">Propuestas</span>
 					</a>
 				</li>	
 				<li className="side-nav__item">
@@ -42,7 +42,7 @@ const sidebar = props => {
 						>
 							<use xlinkHref={`${Symbols}#icon-archive`} />	
 						</svg>
-						<span>Envios</span>
+						<span className="side-nav__linktext">Mis Pedidos</span>
 					</a>
 				</li>	
 				<li className="side-nav__item">
@@ -54,7 +54,7 @@ const sidebar = props => {
 						>
 							<use xlinkHref={`${Symbols}#icon-building`} />	
 						</svg>
-						<span>Empresa</span>
+						<span className="side-nav__linktext">Empresa</span>
 					</a>
 				</li>	
 			</ul>
