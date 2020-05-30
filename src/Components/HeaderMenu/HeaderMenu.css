@@ -1,0 +1,45 @@
+.header-menu__content {
+	width: 13rem;
+	top: 70px;
+	transform-origin: 100% 0px;
+	opacity: 0;
+	transform: scaleX(1) scaleY(1);
+	position: absolute;
+	z-index: 9999;
+	overflow-y: auto;
+	min-width: 100px;
+	margin: 0;
+	background-color: #fff;
+	right: 1px;
+	box-shadow: var(--shadow-dark);
+	border-radius: 1rem;
+}
+
+.header-menu__content--open{
+	opacity: 1;
+}
+
+.header-menu__item {
+	list-style-type: none;
+}
+
+.header-menu__item:hover {
+	background-color: var(--color-grey-light-4);
+}
+
+.header-menu__text, .header-menu__text:visited, .header-menu__text:link {
+	font-size: 1.3rem;
+	line-height: 22px;
+	display: block;
+	padding: 1rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.header-menu__icon {
+	height: 2rem;
+	width: 2rem;
+	fill: var(--color-grey-dark-2);
+	margin-right: 10px;
+	vertical-align:middle;
+}
