@@ -13,6 +13,7 @@
 	right: 1px;
 	box-shadow: var(--shadow-dark);
 	border-radius: 1rem;
+	transition: .3s ease-in-out;
 }
 
 .header-menu__content--open{
