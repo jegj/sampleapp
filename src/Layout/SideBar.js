@@ -1,6 +1,7 @@
 /* src/hoc/Layout/SideBar.js */
 
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './SideBar.css';
 import Symbols from '../images/symbols.svg';
@@ -9,54 +10,54 @@ const sidebar = props => {
 	return (
 		<nav className="sidebar">
 			<ul className="side-nav">
-				<li className="side-nav__item side-nav__item--active">
-					<a href="#" className="side-nav__link">
+				<li className="side-nav__item">
+					<NavLink to="/pedido" exact className="side-nav__link" activeClassName="side-nav__link--active">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							className="side-nav__icon"
 						>
-							<use xlinkHref={`${Symbols}#icon-truck`} />	
+							<use xlinkHref={`${Symbols}#icon-truck`} />
 						</svg>
 						<span className="side-nav__linktext">Pedido</span>
-					</a>
-				</li>	
+					</NavLink>
+				</li>
 				<li className="side-nav__item">
-					<a href="#" className="side-nav__link">
+					<NavLink to="/propuesta" exact className="side-nav__link" activeClassName="side-nav__link--active">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							className="side-nav__icon"
 						>
-							<use xlinkHref={`${Symbols}#icon-balance-scale`} />	
+							<use xlinkHref={`${Symbols}#icon-balance-scale`} />
 						</svg>
 						<span className="side-nav__linktext">Propuestas</span>
-					</a>
-				</li>	
+					</NavLink>
+				</li>
 				<li className="side-nav__item">
-					<a href="#" className="side-nav__link">
+					<NavLink to="/mis_pedidos" exact className="side-nav__link" activeClassName="side-nav__link--active">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							className="side-nav__icon"
 						>
-							<use xlinkHref={`${Symbols}#icon-archive`} />	
+							<use xlinkHref={`${Symbols}#icon-archive`} />
 						</svg>
 						<span className="side-nav__linktext">Mis Pedidos</span>
-					</a>
-				</li>	
+					</NavLink>
+				</li>
 				<li className="side-nav__item">
-					<a href="#" className="side-nav__link">
+					<NavLink to="/empresa" exact className="side-nav__link" activeClassName="side-nav__link--active">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							className="side-nav__icon"
 						>
-							<use xlinkHref={`${Symbols}#icon-building`} />	
+							<use xlinkHref={`${Symbols}#icon-building`} />
 						</svg>
 						<span className="side-nav__linktext">Empresa</span>
-					</a>
-				</li>	
+					</NavLink>
+				</li>
 			</ul>
 			<div className="legal">
 				© 2020 by jaku. Derechos reservados.
